@@ -29,7 +29,7 @@ export const FormWrap = styled.div`
 
 export const Icon = styled(Link)`
     margin-left: 32px;
-    margin-top: 32px;
+    margin-top: 103px;
     text-decoration: none;
     color: #fff;
     font-weight: 700;
@@ -51,7 +51,7 @@ export const Icon = styled(Link)`
 
     @media screen and (max-width: 480px) {
         margin-left: 16px;
-        margin-top: 8px;
+        margin-top: -7px;
     }
 `
 export const FormContent = styled.div`
@@ -61,75 +61,142 @@ export const FormContent = styled.div`
     justify-content: center;
     position: relative;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         padding: 10px;
         margin-top: 40px;
     }
 `
 
-export const Form = styled.form`
-    background: #000000ea;
-    max-width: 500px;
+export const Form = styled.div`
+    background: #000;
+    right: 0;
+    max-width: 700px;
     height: auto;
     width: 100%;
-    z-index: 1;
     display: grid;
-    margin: 0 auto;
-    padding: 80px 32px;
-    border-radius: 5px;
+    margin-left: auto;
+    padding: 100% 32px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 768px) {
         padding: 32px 32px;
         margin-top: 20px;
     }
 `
 
 export const FormH1 = styled.h1`
-    margin-bottom: 40px;
     color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-`
-
-export const FormLabel = styled.label`
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #fff;
-`
-
-export const FormInput = styled.input`
-    padding: 14px 16px;
-    margin-bottom: 32px;
-    border: none;
-    border-radius: 200px;
-`
-
-export const FormButton = styled.button`
-    background: #f94001;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 40px;
-    align-items: center;
-    border: none;
-    border-radius: 100px;
-    color: #fff;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-    justify-content: inherit;
+    font-size: 60px;
+    text-align: left;
+    margin-top: -150px;
+    font-weight: bold;
 
     @media screen and (max-width: 768px) {
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 30px;
+        margin-top: 0;
+        text-align: center;
+        margin-bottom: 10px;
+        
     }
-    
-    &:hover {
-        background: #f96209;
-        transition: 0.5s ease-in-out;
+
+` 
+export const FormH2 = styled.h2`
+    margin-bottom: 80px;
+    margin-top: -60px;
+    color: #fff;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+
+    span {
+        color: #f94001;
     }
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        text-align: center;
+        
+    }
+`
+
+export const FormButton = styled(Link)`
+    border-radius: 50px;
+    background: #f94001;
+    white-space: nowrap;
+    padding: 20px 10px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+        &:hover {
+            transitiion: all 0.2s ease-in-out;
+            background: #fff;
+            color: #f94001;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 10px 5px;
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            font-weight: normal;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 15px 5px;
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            font-weight: normal;
+        }
+`
+export const FormButtonSec = styled(Link)`
+    border-radius: 50px;
+    font-weight: bold;
+    background: #000;
+    white-space: nowrap;
+    padding: 20px 10px;
+    color: #f94001;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    border: 10;
+    border-color: #f94001;
+    border-style: solid;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+        &:hover {
+            transitiion: all 0.2s ease-in-out;
+            background: #f94001;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 15px 5px;
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            font-weight: normal;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 10px 5px;
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            font-weight: normal;
+        }
 `
 
 export const Text = styled.span`

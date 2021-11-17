@@ -108,18 +108,8 @@ export const HeroBtnWrapper = styled.div`
     position: relative;
 
     @media screen and (max-width: 1080px) {
-        margin-right: 0;
-        align-items: center;
-    };
-
-    @media screen and (max-width: 768px) {
-        margin-right: 0;
-        align-items: center;
-    };
-
-    @media screen and (max-width: 480px) {
-        margin-right: 0;
-        align-items: center;
+        margin-right: 60px;
+        align-items: start;
     };
 `
 
@@ -154,24 +144,24 @@ export const play = keyframes`
         }
         25% {
             transform: scaleY(2);
-            background: #ff7446;
+            background: #f93f01b9;
         }
         50% {
             transform: scaleY(1);
-            background: #ffa385;
+            background: #f93f017a;
         }
         75% {
             transform: scaleY(2);
-            background: #ffd1c2;
+            background: #f93f013b;
         }
         100% {
             transform: scaleY(1);
-            background: #ffffff;
+            background: #f93f0100;
         }
         `
 
 export const Line = styled.span`
-        background: #f94001;
+        background: #f93f0100;
         border: none;
         border-radius: 1px;
         animation: ${play} 1s ease infinite;
@@ -179,4 +169,8 @@ export const Line = styled.span`
         height: 2.7rem;
         width: 5px;
         margin: 4px;
+
+        @media screen and (max-width: 768px) {
+            height: 1.5rem;
+        }
 `

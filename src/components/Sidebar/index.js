@@ -60,11 +60,11 @@ const Sidebar = ({ isOpen, toggle }) => {
                     exact='true'
                     offset={-70}
                     >
-                        Sign Up
+                        Listen
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='signin'>LogIn</SidebarRoute>
+                    <SidebarRoute to='signin'>Account</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

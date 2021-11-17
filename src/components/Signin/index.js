@@ -4,11 +4,10 @@ import { Container,
         Icon,
         FormContent,
         Form,
-        FormH1,
-        FormInput,
         FormButton,
-        FormLabel,
-        Text} from './SigninComponents'
+        FormH1,
+        FormButtonSec,
+        FormH2} from './SigninComponents'
 
 const SignIn = () => {
     return (
@@ -18,13 +17,10 @@ const SignIn = () => {
                 <Icon to='/'>Mu<span>ze</span></Icon>
                 <FormContent>
                     <Form action='#'>
-                        <FormH1>LogIn with your account</FormH1>
-                        <FormLabel htmlFor='for'>Email</FormLabel>
-                        <FormInput type='email' required />
-                        <FormLabel htmlFor='for'>Password</FormLabel>
-                        <FormInput type='password' required />
-                        <FormButton type='submit'>LogIn</FormButton>
-                        <Text>Forgot your password?<span> reset now</span></Text>
+                        <FormH1>Loud your speaker</FormH1>
+                        <FormH2>listen now, join Mu<span>ze</span> today.</FormH2>
+                        <FormButton to='signup'>Sign Up</FormButton>
+                        <FormButtonSec to='login'>Sign In</FormButtonSec>
                     </Form>
                 </FormContent>
             </FormWrap>
