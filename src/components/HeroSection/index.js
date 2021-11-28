@@ -66,7 +66,6 @@ const HeroSection = () => {
                         <Line click={click} />
                         <Line click={click} />
                     </Box>
-                    
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
